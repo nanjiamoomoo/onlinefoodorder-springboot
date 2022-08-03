@@ -20,15 +20,15 @@ Database schema is shown in the image below.
 
 ### **3 Layers**
 **_`Controller Layer`_** 
-<https://github.com/nanjiamoomoo/onlineFoodOrder/tree/zackary/src/main/java/com/project/controller>
+<https://github.com/nanjiamoomoo/onlinefoodorder-springboot/tree/master/src/main/java/com/project/controller>
 Defines all the REST APIs to handle HTTP requests and Responses. DispatcherServlet will dispatch the request based on url to the corresponding controller.
 
 **_`Service Layer`_** 
-<https://github.com/nanjiamoomoo/onlineFoodOrder/tree/zackary/src/main/java/com/project/service>
+<https://github.com/nanjiamoomoo/onlinefoodorder-springboot/tree/master/src/main/java/com/project/service>
 Contains all the service logic and mediates communications between controller layer and repository layer. 
 
 **_`DAO (Mapper) Layer`_** 
-<https://github.com/nanjiamoomoo/onlineFoodOrder/tree/zackary/src/main/java/com/project/mapper>
+<https://github.com/nanjiamoomoo/onlinefoodorder-springboot/tree/master/src/main/java/com/project/mapper>
 Communicates with database and do all the database CRUD(Create, Read, Update, Delete) operations. Under mapper package, defined all the interfaces and methods and these methods are mapped to the SQL statements under the corresponding xml file which are located under src/main/resources/mybatis package.
 In this project, all the database operations are implemented by using MyBatis interface proxy mode which means all the methods are self-defined and there are no need to instantiate SqlSession object to call its methods to achieve database operations and nor the need to define the implementation class of each interface, MyBatis framework does 
 these all.
